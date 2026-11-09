@@ -18,23 +18,31 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
+    default: `${siteConfig.fullName} — Official Portal`,
+    template: `%s | ${siteConfig.shortName}`,
   },
   description: siteConfig.description,
-  keywords: ["DDKKHAA", "Agency", "Digital Solutions", "Web Development", "Next.js"],
-  authors: [{ name: "DDKKHAA Team" }],
+  keywords: [
+    "DDKKHA",
+    "Dum Dum Krishna Kumar Hindu Academy",
+    "DDKKHA School Kolkata",
+    "Motijheel School",
+    "WBBSE School",
+    "WBCHSE Higher Secondary School",
+    "Class XI Admission Kolkata",
+  ],
+  authors: [{ name: "DDKKHA Academic Council" }],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: siteConfig.name,
+    title: siteConfig.fullName,
     description: siteConfig.description,
-    siteName: siteConfig.name,
+    siteName: siteConfig.fullName,
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
+    title: siteConfig.fullName,
     description: siteConfig.description,
   },
 };
